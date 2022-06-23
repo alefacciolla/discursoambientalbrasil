@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import spacy 
 nlp = spacy.load("pt_core_news_lg")
-with open('/discursoambientalbrasil/discursos/cop8_abertura.txt', 'r') as cop8:
-    introduction_file_text = open(cop8).read()
-
+with open('/home/skywalker/repositorios/discursoambientalbrasil/discursos/cop8_abertura.txt', 'r') as cop8:
+   #file_text = cop8.read()
+   df1 = pd.read_csv(cop8, sep="\n", header=None)
+   print(df1)
