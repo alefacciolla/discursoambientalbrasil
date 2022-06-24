@@ -4,9 +4,8 @@ import pandas as pd
 import matplotlib as mat
 import matplotlib.pyplot as plt
 import seaborn as sns
-import spacy 
-nlp = spacy.load("pt_core_news_lg")
-with open('/home/skywalker/repositorios/discursoambientalbrasil/discursos/cop8_abertura.txt', 'r') as cop8:
-   #file_text = cop8.read()
-   df1 = pd.read_csv(cop8, sep="\n", header=None)
-   print(df1)
+#import spacy
+#nlp = spacy.load("pt_core_news_lg")
+with open('/home/skywalker/repositorios/discursoambientalbrasil/discursos/cop10.txt', 'r') as cop10:
+   df10 = pd.read_csv(cop10, sep="\n", header=None)
+   print(df10.head(10))
